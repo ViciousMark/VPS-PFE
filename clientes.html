@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPlast - Clientes</title>
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">IPlast</span> Clientes</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="funcionarios.html">Funcionários</a></li>
+                    <li class="current"><a href="clientes.html">Clientes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Lista de Clientes</h2>
+        <button class="btn add-btn" onclick="openModal()">Adicionar Cliente</button>
+        
+        <table id="clientsTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="clientModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Adicionar Cliente</h2>
+            <form id="clientForm">
+                <input type="hidden" id="clientId">
+                <div class="form-group">
+                    <label for="clientName">Nome:</label>
+                    <input type="text" id="clientName" name="clientName">
+                </div>
+                <div class="form-group">
+                    <label for="clientEmail">CPF:</label>
+                    <input type="email" id="clientEmail" name="clientEmail">
+                </div>
+                <div class="form-group">
+                    <label for="clientPhone">E-mail:</label>
+                    <input type="text" id="clientPhone" name="clientPhone">
+                </div>
+                <div class="form-group">
+                    <label for="clientAddress">Logradouro:</label>
+                    <textarea id="clientAddress" name="clientAddress"></textarea>
+                </div>
+                <button type="button" class="btn save-btn" onclick="saveClient()">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Marcos Vinicius &copy; 2025</p>
+    </footer>
+
+    <script src="js/clientes.js"></script>
+</body>
+</html>

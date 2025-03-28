@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPlast - Produtos</title>
+    <link rel="stylesheet" href="css/produtos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">IPlast</span> Produtos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="produtos.html">Produtos</a></li>
+                    <li><a href="funcionarios.html">Funcionários</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Lista de Produtos</h2>
+        <button class="btn add-btn" onclick="openModal()">Adicionar Produto</button>
+        
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço Custo</th>
+                    <th>Preço Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Adicionar Produto</h2>
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                <div class="form-group">
+                    <label for="productName">Nome:</label>
+                    <input type="text" id="productName" name="productName">
+                </div>
+                <div class="form-group">
+                    <label for="productDescription">Descrição:</label>
+                    <textarea id="productDescription" name="productDescription"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="productCost">Preço Custo:</label>
+                    <input type="text" id="productCost" name="productCost">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Preço Final:</label>
+                    <input type="text" id="productPrice" name="productPrice">
+                </div>
+                <button type="button" class="btn save-btn" onclick="saveProduct()">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Marcos Vinicius &copy; 2025</p>
+    </footer>
+
+    <script src="js/produtos.js"></script>
+</body>
+</html>

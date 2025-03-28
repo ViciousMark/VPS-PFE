@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.showcase {
+    min-height: 400px;
+    background: url('https://via.placeholder.com/1920x400') no-repeat 0 -400px;
+    text-align: center;
+    color: #000000;
+}
+
+.showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.showcase p {
+    font-size: 20px;
+}
+
+.current {
+    color: #e8491d;
+    font-weight: bold;
+}
