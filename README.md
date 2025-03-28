@@ -24,17 +24,6 @@ Armazenamento local via LocalStorage.
 
 Interface simples e responsiva.
 
-## Estrutura do Projeto
-
-/projeto-iplat
-│── index.html         # Página inicial com links para as outras páginas
-│── produtos.html      # Tela de gerenciamento de produtos
-│── funcionarios.html  # Tela de gerenciamento de funcionários
-│── clientes.html      # Tela de gerenciamento de clientes
-│── script.js         # Script principal para funcionalidades
-│── styles.css        # Arquivo de estilização
-│── README.md         # Documentação do projeto
-
 ## Como Executar o Projeto
 
 Baixe ou clone o repositório.
